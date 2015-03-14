@@ -4,8 +4,8 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.flowics</groupId>
-	<artifactId>dw-poc</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>dw-helloworld</artifactId>
+	<version>0.0.1</version>
 
 	<dependencies>
 		<dependency>
