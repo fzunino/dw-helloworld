@@ -31,5 +31,15 @@ public class HelloWorldResource {
         return new Saying(counter.incrementAndGet(), value);
     }
 
-    
+    /* Example of long running task to see how threads monitoring (http://localhost:8081/threads) 
+     * is shown by dropwizard
+     */
+    @GET
+    @Path("/delayed")
+    @Timed
+    public Saying waitToSayHello(@QueryParam("name") Optional<String> name) throws InterruptedException {
+        final String value = String.format(template, name.or(defaultName));
+        Thread.sleep(10000L);
+        return new Saying(counter.incrementAndGet(), value);
+    }
 }
