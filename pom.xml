@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.flowics</groupId>
-	<artifactId>dw-helloworld</artifactId>
+	<artifactId>dw-helloworld-swagger</artifactId>
 	<version>0.0.1</version>
 
 	<dependencies>
@@ -12,6 +12,11 @@
 			<groupId>io.dropwizard</groupId>
 			<artifactId>dropwizard-core</artifactId>
 			<version>${dropwizard.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.federecio</groupId>
+			<artifactId>dropwizard-swagger</artifactId>
+			<version>0.6-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 
